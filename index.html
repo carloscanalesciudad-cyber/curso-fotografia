@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensar en Imágenes | Carlos Canales - Escuela Spectrum</title>
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bone: '#F9F9F9',
+                        ink: '#111111',
+                        ash: '#888888',
+                        divider: '#E5E5E5'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        ::selection {
+            background-color: #111111;
+            color: #F9F9F9;
+        }
+        
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo-filter {
+            max-height: 40px;
+        }
+    </style>
+</head>
+<body class="bg-bone text-ink font-sans antialiased leading-relaxed">
+
+    <!-- Navegación -->
+    <nav class="absolute top-0 left-0 w-full p-6 md:px-12 md:py-8 z-20 flex justify-between items-center">
+        <a href="https://spectrumfotografia.es/" target="_blank" class="block hover:opacity-80 transition-opacity">
+            <img src="https://spectrumfotografia.es/wp-content/uploads/2024/01/logo-spectrum.png" alt="Logo Escuela Spectrum" class="logo-filter">
+        </a>
+        <div class="text-[10px] tracking-[0.2em] uppercase text-ink font-medium hidden md:block">
+            Zaragoza — 2026
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <header class="min-h-screen flex flex-col md:flex-row">
+        <div class="w-full md:w-1/2 flex flex-col justify-center px-6 py-32 md:p-24 lg:p-32 z-10 bg-bone border-b md:border-b-0 border-divider">
+            <h1 class="font-serif text-6xl md:text-7xl lg:text-8xl leading-[1] tracking-tight mb-8">
+                Pensar en<br>
+                Imágenes.
+            </h1>
+            <p class="font-sans text-xl md:text-2xl text-ash mb-12 max-w-lg leading-relaxed font-light italic">
+                Nueve sesiones para transformar tu archivo en un proyecto con voz propia. Un curso de autor en la Escuela Spectrum.
+            </p>
+            <div>
+                <a href="#detalles" class="inline-block bg-ink text-bone px-10 py-5 text-sm tracking-[0.1em] uppercase hover:bg-black hover:scale-[1.02] transition-all duration-300 shadow-sm">
+                    Solicitar plaza
+                </a>
+            </div>
+        </div>
+        
+        <div class="w-full md:w-1/2 min-h-[60vh] md:min-h-screen bg-gray-100 relative overflow-hidden group border-l border-divider text-center flex items-center justify-center">
+            <img 
+                src="https://olmogonzalez.wordpress.com/wp-content/uploads/2012/11/south-central.jpg?w=800&h=576&crop=1" 
+                alt="Imagen de portada" 
+                class="w-full h-full object-cover fade-in group-hover:scale-105 transition-transform duration-1000"
+            >
+        </div>
+    </header>
+
+    <!-- 2. Manifiesto -->
+    <section class="py-32 md:py-48 px-6 bg-bone flex justify-center border-t border-divider text-center">
+        <div class="max-w-4xl mx-auto">
+            <blockquote class="font-serif italic text-3xl md:text-5xl lg:text-6xl leading-tight text-ink mb-24">
+                "Hacer fotos es solo el 20% del trabajo. El verdadero acto fotográfico comienza antes, con la intención, y termina después, con la edición y la secuencia."
+            </blockquote>
+
+            <div class="w-full mb-24 bg-white p-2 shadow-sm overflow-hidden">
+                <img src="https://static01.nyt.com/images/2019/09/10/arts/10frank-list1/10frank-list1-superJumbo.jpg" alt="Referente Robert Frank" class="w-full h-auto hover:scale-[1.01] transition-transform duration-1000">
+                <p class="text-[9px] uppercase tracking-widest text-ash mt-4 text-right italic">Referente: Robert Frank</p>
+            </div>
+
+            <div class="font-sans text-lg md:text-xl text-ink font-light max-w-2xl mx-auto space-y-8 text-left border-l-2 border-ink pl-8 md:pl-12">
+                <p>
+                    Tienes los discos duros llenos de fotografías técnicamente correctas. Sabes medir la luz, enfocar y componer. <strong>No hay una historia. No hay una voz.</strong>
+                </p>
+                <p>
+                    El problema es que la industria nos ha enseñado a disparar, pero nadie nos ha enseñado a editar y a secuenciar.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Temario -->
+    <section class="py-32 px-6 md:px-12 lg:px-24 bg-bone border-t border-divider">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="font-serif text-4xl md:text-5xl mb-4 text-ink">El Recorrido</h2>
+                <p class="text-ash uppercase tracking-[0.2em] text-[10px]">9 Sesiones de Profundización</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-12 md:gap-16 items-start">
+                <div class="group flex flex-col">
+                    <div class="w-full mb-8 overflow-hidden bg-white p-2 shadow-sm">
+                        <img src="https://i0.wp.com/fraenkelgallery.com/wp-content/uploads/2012/02/5_DA-0750_Triplets-in-their-bedroom-N.J.-1963.jpg?fit=675%2C671&quality=90&strip=all&ssl=1" alt="Diane Arbus" class="w-full h-auto group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="text-4xl font-serif text-divider group-hover:text-ink transition-colors duration-500 mb-6">I</div>
+                    <h3 class="text-xl font-medium mb-4 uppercase tracking-tight">Fundamentos y Visión</h3>
+                    <p class="text-sm text-ash mb-4">Deconstrucción y referentes.</p>
+                </div>
+
+                <div class="group flex flex-col">
+                    <div class="w-full mb-8 overflow-hidden bg-white p-2 shadow-sm">
+                        <img src="https://www.laiaabril.com/wp-content/uploads/2024/10/LAIA-ABRIL_HARMREDUCTION_MACBA.jpg" alt="Laia Abril" class="w-full h-auto group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="text-4xl font-serif text-divider group-hover:text-ink transition-colors duration-500 mb-6">II</div>
+                    <h3 class="text-xl font-medium mb-4 uppercase tracking-tight">Narrativa y Edición</h3>
+                    <p class="text-sm text-ash mb-4">Secuenciación y ritmo visual.</p>
+                </div>
+
+                <div class="group flex flex-col">
+                    <div class="w-full mb-8 overflow-hidden bg-white p-2 shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsAzWic5qez6NQC0aF8gRCD8b6hneE9RX_oW88rmtohUXfNtIRW-OvR8Hi1Rs0aW_n9FnnoUoR84vrxqezUFWvf_EKfqmPBeM8c2Wx9g&s=10" alt="Hojas de contacto" class="w-full h-auto group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="text-4xl font-serif text-divider group-hover:text-ink transition-colors duration-500 mb-6">III</div>
+                    <h3 class="text-xl font-medium mb-4 uppercase tracking-tight">Materialización</h3>
+                    <p class="text-sm text-ash mb-4">El fotolibro y la obra final.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Perfil y Registro -->
+    <section id="detalles" class="py-32 px-6 md:px-12 lg:px-24 bg-bone border-t border-divider">
+        <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24">
+            
+            <div class="w-full lg:w-1/2 flex flex-col gap-10">
+                <div class="relative overflow-hidden group shadow-2xl bg-white p-2">
+                    <!-- He ajustado el nombre de la imagen para que coincida con la que has subido -->
+                    <img 
+                        src="foto carlos canales.jpg" 
+                        alt="Retrato Carlos Canales" 
+                        class="w-full h-auto group-hover:scale-[1.02] transition-transform duration-1000"
+                        onerror="this.src='https://via.placeholder.com/600x800?text=Carlos+Canales'"
+                    >
+                </div>
+                <div>
+                    <h3 class="font-serif text-4xl mb-4 tracking-tight">Carlos Canales</h3>
+                    <p class="font-light text-ash mb-8 text-xs tracking-[0.3em] uppercase">Fotógrafo y Docente</p>
+                    <p class="text-sm leading-relaxed">Formado con maestros como Navia y Momeñe. Especialista en edición y narrativa de autor.</p>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-1/2">
+                <div class="border border-ink p-10 md:p-16 bg-white shadow-xl sticky top-12">
+                    <h2 class="font-serif text-3xl mb-10 text-ink">Inscripción</h2>
+                    <ul class="space-y-6 mb-12 text-sm">
+                        <li class="flex justify-between border-b pb-4"><span class="text-ash uppercase tracking-widest text-[10px]">Lugar</span> <span>Spectrum, Zaragoza</span></li>
+                        <li class="flex justify-between border-b pb-4"><span class="text-ash uppercase tracking-widest text-[10px]">Duración</span> <span>9 sesiones</span></li>
+                    </ul>
+                    <a href="mailto:info@spectrumfotografia.es?subject=Inscripción: Curso Pensar en Imágenes" class="block w-full bg-ink text-white py-6 text-sm tracking-[0.2em] uppercase text-center hover:bg-black transition-all">
+                        Inscribirse vía email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center bg-white border-t border-divider">
+        <p class="text-[10px] tracking-[0.4em] uppercase text-ash">Pensar en Imágenes — 2026</p>
+    </footer>
+
+</body>
+</html>
